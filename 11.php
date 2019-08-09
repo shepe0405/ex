@@ -4,6 +4,9 @@
 	mês com este número
 		
 		js não deixando ser letra ou numero maior que 12 ou menor q 1
+		
+		ex12 esta no codeigniter
+
 
 	*/?>
 
