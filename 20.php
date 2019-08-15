@@ -22,7 +22,7 @@ $teste = 0;
 		$teste = $massa*$perde;
 		$massa -= $teste;
 	}
-	
+
 	$novo = $num/2;
 
 	if (is_float($novo)) {
@@ -30,3 +30,25 @@ $teste = 0;
 	} else {
 		echo "<br>".$novo." Minutos";
 	}
+
+?>
+
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$.ajax({
+    url: "ajax.php",
+    type: "POST",
+    data: "campo1=dado1&campo2=dado2&campo3=dado3",
+    dataType: "html"
+
+	}).done(function(resposta) {
+	    console.log(resposta);
+
+	}).fail(function(jqXHR, textStatus ) {
+	    console.log("Request failed: " + textStatus);
+
+	}).always(function() {
+	     console.logs("completou");
+	});
+</script>
